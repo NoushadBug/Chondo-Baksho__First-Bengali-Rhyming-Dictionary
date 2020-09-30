@@ -1,0 +1,89 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter pub get
+
+## exception
+
+YamlException: Error on line 79, column 4: While parsing a block collection, expected '-'.
+   ╷
+79 │    fonts:
+   │    ^
+   ╵
+
+```
+#0      Parser._parseBlockSequenceEntry (package:yaml/src/parser.dart:369:5)
+#1      Parser._stateMachine (package:yaml/src/parser.dart:77:16)
+#2      Parser.parse (package:yaml/src/parser.dart:47:19)
+#3      Loader._loadSequence (package:yaml/src/loader.dart:141:23)
+#4      Loader._loadNode (package:yaml/src/loader.dart:84:16)
+#5      Loader._loadMapping (package:yaml/src/loader.dart:163:19)
+#6      Loader._loadNode (package:yaml/src/loader.dart:86:16)
+#7      Loader._loadMapping (package:yaml/src/loader.dart:163:19)
+#8      Loader._loadNode (package:yaml/src/loader.dart:86:16)
+#9      Loader._loadDocument (package:yaml/src/loader.dart:62:20)
+#10     Loader.load (package:yaml/src/loader.dart:54:20)
+#11     loadYamlDocument (package:yaml/yaml.dart:51:25)
+#12     loadYamlNode (package:yaml/yaml.dart:42:5)
+#13     loadYaml (package:yaml/yaml.dart:34:5)
+#14     _pluginFromPackage (package:flutter_tools/src/plugins.dart:282:27)
+#15     findPlugins.<anonymous closure> (package:flutter_tools/src/plugins.dart:316:27)
+#16     _LinkedHashMapMixin.forEach (dart:collection-patch/compact_hash.dart:379:8)
+#17     findPlugins (package:flutter_tools/src/plugins.dart:314:12)
+#18     refreshPluginsList (package:flutter_tools/src/plugins.dart:1050:32)
+#19     FlutterProject.ensureReadyForPlatformSpecificTooling (package:flutter_tools/src/project.dart:210:5)
+#20     PackagesGetCommand.runCommand (package:flutter_tools/src/commands/packages.dart:128:23)
+<asynchronous suspension>
+#21     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:723:18)
+#22     _rootRunUnary (dart:async/zone.dart:1192:38)
+#23     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#24     _FutureListener.handleValue (dart:async/future_impl.dart:141:18)
+#25     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:682:45)
+#26     Future._propagateToListeners (dart:async/future_impl.dart:711:32)
+#27     Future._completeWithValue (dart:async/future_impl.dart:526:5)
+#28     Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:556:7)
+#29     _rootRun (dart:async/zone.dart:1184:13)
+#30     _CustomZone.run (dart:async/zone.dart:1077:19)
+#31     _CustomZone.runGuarded (dart:async/zone.dart:979:7)
+#32     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1019:23)
+#33     _microtaskLoop (dart:async/schedule_microtask.dart:43:21)
+#34     _startMicrotaskLoop (dart:async/schedule_microtask.dart:52:5)
+#35     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#36     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:169:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, v1.17.5, on Microsoft Windows [Version 10.0.18362.900], locale en-US)
+    • Flutter version 1.17.5 at C:\flutter
+    • Framework revision 8af6b2f038 (2 weeks ago), 2020-06-30 12:53:55 -0700
+    • Engine revision ee76268252
+    • Dart version 2.8.4
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.3)
+    • Android SDK at C:\Users\iflam\AppData\Local\Android\Sdk
+    • Platform android-29, build-tools 29.0.3
+    • ANDROID_HOME = C:\Program Files\Android
+    • ANDROID_SDK_ROOT = C:\sdk
+    • Java binary at: C:\Program Files\Java\jdk1.8.0_231\bin\java
+    • Java version Java(TM) SE Runtime Environment (build 1.8.0_231-b11)
+    • All Android licenses accepted.
+
+[!] Android Studio (version 4.0)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    ✗ Unable to find bundled Java version.
+    • Try updating or re-installing Android Studio.
+
+[✓] VS Code (version 1.47.1)
+    • VS Code at C:\Users\iflam\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.12.2
+
+[✓] Connected device (1 available)
+    • Android SDK built for x86 • emulator-5554 • android-x86 • Android 8.1.0 (API 27) (emulator)
+
+! Doctor found issues in 1 category.
+```
