@@ -1,4 +1,4 @@
-# cbtest
+# Chondo Baksho - First Bengali Rhyming Dictionary
 
 A new Flutter project.
 
