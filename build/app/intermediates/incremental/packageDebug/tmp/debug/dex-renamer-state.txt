@@ -1,4 +1,4 @@
-#Sun Jul 19 18:12:42 BDT 2020
+#Fri Oct 02 23:58:00 BDT 2020
 base.0=C\:\\Users\\iflam\\Downloads\\FlutterTest\\cbtest\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

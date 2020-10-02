@@ -71,7 +71,7 @@ class Syllable {
 
   String x, vowelFreeWord;
 
-  backend(String x) {
+  Syllable(String x) {
     this.x = x;
     vowelFreeWord = x;
     for (int i = 0; i < vowelFreeWord.length; i++) {
@@ -174,7 +174,7 @@ class Syllable {
     }
 
     print(x);
-    print(y);
+    // print(y);
 //   print(syllable.toString()+" Syllable(s)");
     return syllable;
   }
