@@ -19,11 +19,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_spinkit: ^4.1.1
   back_button_interceptor: ^4.2.3
   shared_preferences: ^0.5.4+9
   sqflite: 
-  path: 
+  path_provider: 
   intl: ^0.16.1
   rflutter_alert: ^1.0.3
 
@@ -67,6 +66,7 @@ flutter:
    - assets/images/bak2.png
    - assets/images/splash1.png
    - assets/images/innovation.png
+   - assets/database/wordsDB.db
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

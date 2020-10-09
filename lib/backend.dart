@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dbHelper.dart';
 
 class Backend extends StatefulWidget {
   final String data;
@@ -13,18 +14,22 @@ class Backend extends StatefulWidget {
 }
 
 class _BackendState extends State<Backend> {
+  DbHelper dbHelper = new DbHelper();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('সিলেবল কাউন্টার'),
+        title: Text(widget.data +
+            ' শব্দের সিলেবল সংখ্যা ' +
+            (Syllable(widget.data).syllableCounter().toString())),
+        // title: Text('সিলেবল কাউন্টার'),
       ),
       body: Center(
-        child: Text(
-          widget.data +
-              ' শব্দের সিলেবল সংখ্যা ' +
-              (Syllable(widget.data).syllableCounter().toString()),
-          style: TextStyle(fontSize: 25.0),
+        child: RaisedButton(
+          onPressed: () {
+            dbHelper.initDB();
+          },
+          child: Text('Check DB connection'),
         ),
       ),
     );
