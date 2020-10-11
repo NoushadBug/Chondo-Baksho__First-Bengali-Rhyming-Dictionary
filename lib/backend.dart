@@ -28,6 +28,7 @@ class _BackendState extends State<Backend> {
         child: RaisedButton(
           onPressed: () {
             dbHelper.initDB();
+            dbHelper.execution('will execute some db query');
           },
           child: Text('Check DB connection'),
         ),
