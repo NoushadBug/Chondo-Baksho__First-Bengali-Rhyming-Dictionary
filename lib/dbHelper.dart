@@ -15,6 +15,11 @@ class DbHelper {
     if (exist && valid) {
       print("db exists!");
       await openDatabase(path, readOnly: true);
+      List<Map> list = await db.rawQuery('SELECT *');
+      print(list);
+      print('list');
+
+      // await db.execute('CREATE TABLE Test (id INTEGER PRIMARY KEY, name TEXT, value INTEGER, num REAL)');
     } else {
       print("oops db does not exists");
 
@@ -28,6 +33,7 @@ class DbHelper {
         print('db copied');
       }
       await openDatabase(path, readOnly: true);
+      await db.execute("CREATE TABLE NewTable");
     }
   }
 
@@ -41,7 +47,8 @@ class DbHelper {
         print("db is valid");
       }
     } catch (_) {} finally {
-      await db?.close();
+      print("db not valid. db is closing");
+      
     }
     return isDatabase;
   }
@@ -49,6 +56,7 @@ class DbHelper {
   Future execution(String query) async {
     // print(db.rawQuery('SELECT * FROM "words"'));
     // List<Map> list = await db.query('SELECT * FROM "words"');
+    await db.execute("CREATE TABLE NewTable");
     print(query);
   }
 }
