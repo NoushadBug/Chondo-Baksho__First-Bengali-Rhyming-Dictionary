@@ -105,7 +105,7 @@ class _AboutInfoState extends State<AboutInfo> with TickerProviderStateMixin {
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
-                    Icons.home,
+                    Icons.clear,
                     color: Colors.teal,
                   ),
                 ),
