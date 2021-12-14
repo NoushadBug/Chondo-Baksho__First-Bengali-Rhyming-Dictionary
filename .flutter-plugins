@@ -1,9 +1,11 @@
 # This is a generated file; do not edit or check into version control.
-path_provider=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider-1.6.18\\
-path_provider_linux=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_linux-0.0.1+2\\
-path_provider_macos=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_macos-0.0.4+4\\
-path_provider_windows=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_windows-0.0.4+1\\
-shared_preferences=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.7+3\\
-shared_preferences_macos=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_macos-0.0.1+9\\
-shared_preferences_web=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_web-0.1.2+7\\
-sqflite=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\sqflite-1.2.0\\
+path_provider=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider-1.6.28\\
+path_provider_linux=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_linux-0.0.1+2\\
+path_provider_macos=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_macos-0.0.4+8\\
+path_provider_windows=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_windows-0.0.5\\
+shared_preferences=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.12+4\\
+shared_preferences_linux=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_linux-0.0.2+4\\
+shared_preferences_macos=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_macos-0.0.1+11\\
+shared_preferences_web=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_web-0.1.2+7\\
+shared_preferences_windows=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_windows-0.0.2+3\\
+sqflite=E:\\Flutter_2.8.0\\.pub-cache\\hosted\\pub.dartlang.org\\sqflite-2.0.1\\
