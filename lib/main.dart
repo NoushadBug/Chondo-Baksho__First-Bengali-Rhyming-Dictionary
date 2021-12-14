@@ -8,7 +8,7 @@ void main() => runApp(MaterialApp(
       theme: ThemeData(
           fontFamily: 'ShorifTeesta',
           primaryColor: Colors.orange,
-          accentColor: Colors.orange),
+          colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.orange)),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
