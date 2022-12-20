@@ -1,6 +1,6 @@
 # Chondo Baksho - First Bengali Rhyming Dictionary
 
-A new Flutter project.
+First Bengali Rhyming Dictionary [incomplete]
 
 ## Getting Started
 
